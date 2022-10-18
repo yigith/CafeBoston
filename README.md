@@ -1,5 +1,3 @@
-This change is for testing
-
 Create a class library project named CafeBoston.DATA and create 5 classes and 1 enum as described below.
 
 Product
