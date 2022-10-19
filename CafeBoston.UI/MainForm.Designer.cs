@@ -70,6 +70,7 @@
             this.lvwTables.Size = new System.Drawing.Size(800, 426);
             this.lvwTables.TabIndex = 1;
             this.lvwTables.UseCompatibleStateImageBehavior = false;
+            this.lvwTables.DoubleClick += new System.EventHandler(this.lvwTables_DoubleClick);
             // 
             // imlTables
             // 
