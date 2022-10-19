@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.msTop = new System.Windows.Forms.MenuStrip();
             this.tsmiProducts = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiOrderHistory = new System.Windows.Forms.ToolStripMenuItem();
             this.lvwTables = new System.Windows.Forms.ListView();
+            this.imlTables = new System.Windows.Forms.ImageList(this.components);
             this.msTop.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,11 +64,20 @@
             // lvwTables
             // 
             this.lvwTables.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvwTables.LargeImageList = this.imlTables;
             this.lvwTables.Location = new System.Drawing.Point(0, 24);
             this.lvwTables.Name = "lvwTables";
             this.lvwTables.Size = new System.Drawing.Size(800, 426);
             this.lvwTables.TabIndex = 1;
             this.lvwTables.UseCompatibleStateImageBehavior = false;
+            // 
+            // imlTables
+            // 
+            this.imlTables.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imlTables.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imlTables.ImageStream")));
+            this.imlTables.TransparentColor = System.Drawing.Color.Transparent;
+            this.imlTables.Images.SetKeyName(0, "empty");
+            this.imlTables.Images.SetKeyName(1, "full");
             // 
             // MainForm
             // 
@@ -90,5 +102,6 @@
         private ToolStripMenuItem tsmiProducts;
         private ToolStripMenuItem tsmiOrderHistory;
         private ListView lvwTables;
+        private ImageList imlTables;
     }
 }
