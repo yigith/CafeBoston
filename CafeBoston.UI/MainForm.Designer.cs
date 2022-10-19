@@ -60,6 +60,7 @@
             this.tsmiOrderHistory.Name = "tsmiOrderHistory";
             this.tsmiOrderHistory.Size = new System.Drawing.Size(90, 20);
             this.tsmiOrderHistory.Text = "Order History";
+            this.tsmiOrderHistory.Click += new System.EventHandler(this.tsmiOrderHistory_Click);
             // 
             // lvwTables
             // 
